@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"nailart","l":"NailArt"},{"p":"nailart","l":"Nailscreen"},{"p":"nailart","l":"productpanel"},{"p":"nailart","l":"Nailscreen.Validation"}];updateSearchResults();
