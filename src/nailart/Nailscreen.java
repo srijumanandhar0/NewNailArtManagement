@@ -139,8 +139,8 @@ private java.awt.CardLayout cardLayout;
         jLabel45 = new javax.swing.JLabel();
         jLabel46 = new javax.swing.JLabel();
         welcome = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
+        logout = new javax.swing.JButton();
+        search = new javax.swing.JButton();
         jTextField1 = new javax.swing.JTextField();
         lgnpanel = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
@@ -720,21 +720,21 @@ private java.awt.CardLayout cardLayout;
         welcome.setForeground(new java.awt.Color(255, 255, 255));
         welcome.setText("Welcome To Glam with peach");
 
-        jButton1.setBackground(new java.awt.Color(81, 50, 40));
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("LOGOUT");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        logout.setBackground(new java.awt.Color(81, 50, 40));
+        logout.setForeground(new java.awt.Color(255, 255, 255));
+        logout.setText("LOGOUT");
+        logout.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                logoutActionPerformed(evt);
             }
         });
 
-        jButton3.setBackground(new java.awt.Color(81, 50, 40));
-        jButton3.setForeground(new java.awt.Color(255, 255, 255));
-        jButton3.setText("Search");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        search.setBackground(new java.awt.Color(81, 50, 40));
+        search.setForeground(new java.awt.Color(255, 255, 255));
+        search.setText("Search");
+        search.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                searchActionPerformed(evt);
             }
         });
 
@@ -761,12 +761,12 @@ private java.awt.CardLayout cardLayout;
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, screenLayout.createSequentialGroup()
                         .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 288, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(33, 33, 33)
-                        .addComponent(jButton3)
+                        .addComponent(search)
                         .addGap(189, 189, 189))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, screenLayout.createSequentialGroup()
                         .addComponent(welcome, javax.swing.GroupLayout.PREFERRED_SIZE, 288, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(172, 172, 172)
-                        .addComponent(jButton1)
+                        .addComponent(logout)
                         .addGap(26, 26, 26))))
             .addComponent(jTabbedPane1)
         );
@@ -776,13 +776,13 @@ private java.awt.CardLayout cardLayout;
                 .addContainerGap()
                 .addGroup(screenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(screenLayout.createSequentialGroup()
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(logout, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(35, 35, 35))
                     .addGroup(screenLayout.createSequentialGroup()
                         .addComponent(welcome, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(screenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jButton3)
+                            .addComponent(search)
                             .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jTabbedPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 580, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -1064,10 +1064,10 @@ private java.awt.CardLayout cardLayout;
         
     }//GEN-LAST:event_mainpanelComponentShown
     
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void logoutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_logoutActionPerformed
         // TODO add your handling code here:
         System.exit(0);
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_logoutActionPerformed
 
     private void showpasswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_showpasswordActionPerformed
         // TODO add your handling code here:
@@ -1289,7 +1289,7 @@ JOptionPane.showMessageDialog(this,
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1ActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void searchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchActionPerformed
     selection selectionSort = new selection();
     DefaultTableModel model = (DefaultTableModel) table.getModel();
     List<NailModel> sortedName = selectionSort.sortByFirstName(nail, true);
@@ -1322,7 +1322,7 @@ JOptionPane.showMessageDialog(this,
         customer.getDepartment()
     });
 }
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }//GEN-LAST:event_searchActionPerformed
 
     private void nailuserActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nailuserActionPerformed
         // TODO add your handling code here:
@@ -1419,8 +1419,6 @@ JOptionPane.showMessageDialog(this,
     private javax.swing.JTextField cotno;
     private javax.swing.JTextField dm;
     private javax.swing.JTextField firstname;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -1485,6 +1483,7 @@ JOptionPane.showMessageDialog(this,
     private javax.swing.JPanel loadingpnl;
     private javax.swing.JProgressBar loadnailbar;
     private javax.swing.JButton loginbutton;
+    private javax.swing.JButton logout;
     private javax.swing.JPanel mainpanel;
     private javax.swing.JLabel nailgirl;
     private javax.swing.JPasswordField nailpassword;
@@ -1492,6 +1491,7 @@ JOptionPane.showMessageDialog(this,
     private javax.swing.JLabel passworderror;
     private javax.swing.JLabel photo1;
     private javax.swing.JPanel screen;
+    private javax.swing.JButton search;
     private javax.swing.JButton selection;
     private javax.swing.JTextField semail;
     private javax.swing.JCheckBox showpassword;
